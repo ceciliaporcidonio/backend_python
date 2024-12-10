@@ -6,6 +6,6 @@ router = DefaultRouter()
 router.register(r'products', ProductViewSet, basename='product')
 
 urlpatterns = [
-    path('', include(router.urls)),  # Inclui as rotas geradas pelo roteador
+    path('', include(router.urls)),
 ]
 
