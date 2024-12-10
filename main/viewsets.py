@@ -4,6 +4,9 @@ from .models import Product
 from .serializers import ProductSerializer
 
 class ProductViewSet(ModelViewSet):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
+    """
+    ViewSet para gerenciar produtos. Permite operações CRUD.
+    """
+    queryset = Product.objects.all()  # Obtém todos os produtos do banco
+    serializer_class = ProductSerializer  # Usa o serializer previamente criado
 
